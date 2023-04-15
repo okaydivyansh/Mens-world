@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Men's World</title>
+    <link rel="shortcut icon" href="img/logo.ico" />
+    <meta charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:300,700' rel='stylesheet' type='text/css' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <script src = "js/product.js"></script>
+<style type = "text/css">
+.fetch-data-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}</style>
+ </head>
+  <body>
+   <header style="background-color: white; box-shadow: 0 1px 4px rgba(0, 0, 0, .1);">
+    <div class="container" style="padding-top: 8px;padding-bottom: 8px;">
+     <div class="grid grid-two">
+       <a href="index.html"><img src="img/logo.jpg" alt="logo" style="height: 64px ;" />
+
+     </div>
+     <div class="grid grid-two" style="padding-top: 24px;text-align: right;">
+
+     </div>
+    </div>
+   </header>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Men's World</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          
+          <ul class="navbar-nav">
+  
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="register.html">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   <main class="container">
+
+    <!-- <nav id="product-nav" class="full">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="products.html">Products</a></li>
+     <li><a href="about.html">About</a></li>
+     <li><a href="contact.html">Contact</a></li>
+     <li style="float: right"><a href="login.html">Login</a></li>
+      <li style="float: right"><a href="register.html">Register</a></li>
+    </nav> -->
+    <div class="full">
+     <div class="grid grid-three">
+     <h1 class="text-blue">SHOES</h1>
+      <section class="box product">
+       <h2>Shoe 1</h2>
+       <img src="img/product/shoes/1.jpg" />
+<div class="product1">
+</div>
+      </section>
+<p align = "center"><button class="fetch-data-button" onclick="fetchData1()">Details</button>
+      <section class="box product">
+       <h2>Shoe 2</h2>
+       <img src="img/product/shoes/2.jpg" />
+<div class="product2">
+</div>
+      </section>
+<p align = "center"><button class="fetch-data-button" onclick="fetchData2()">Details</button>
+      <section class="box product">
+       <h2>Shoe 3</h2>
+       <img src="img/product/shoes/3.jpg" />
+      <div class="product3">
+</div>
+      </section>
+ <p align = "center"><button class="fetch-data-button" onclick="fetchData3()">Details</button>
+
+      <section class="box product">
+       <h2>Shoe 4</h2>
+       <img src="img/product/shoes/4.jpg" />
+     
+<div class="product4">
+</div>
+      </section>
+ <p align = "center"><button class="fetch-data-button" onclick="fetchData4()">Details</button>
+      <section class="box product">
+       <h2>Shoe 5</h2>
+       <img src="img/product/shoes/5.jpg" />
+     
+<div class="product5">
+</div>
+      </section>
+ <p align = "center"><button class="fetch-data-button" onclick="fetchData5()">Details</button>
+     </div>
+     <div class="grid grid-three">
+     <h1 class="text-blue">JEANS</h1>
+      <section class="box product">
+       <h2>jeans 1</h2>
+       <img src="img/product/jeans/1.jpg" />
+       
+<div class="product6">
+</div>
+      </section>
+<p align = "center"><button class="fetch-data-button" onclick="fetchData6()">Details</button>
+      <section class="box product">
+       <h2>jeans 2</h2>
+       <img src="img/product/jeans/2.jpg" />
+      
+<div class="product7">
+</div>
+      </section>
+ <p align = "center"><button class="fetch-data-button" onclick="fetchData7()">Details</button>
+      <section class="box product">
+       <h2>jeans 3</h2>
+       <img src="img/product/jeans/3.jpg" />
+       
+<div class="product8">
+</div>
+      </section>
+<p align = "center"><button class="fetch-data-button" onclick="fetchData8()">Details</button>
+      <section class="box product">
+       <h2>jeans 4</h2>
+       <img src="img/product/jeans/4.jpg" />
+       
+<div class="product9">
+</div>
+      </section>
+<p align = "center"><button class="fetch-data-button" onclick="fetchData9()">Details</button>
+      <section class="box product">
+       <h2>jeans 5</h2>
+       <img src="img/product/jeans/5.jpg" />
+       
+<div class="product10">
+</div>
+      </section>
+<p align = "center"><button class="fetch-data-button" onclick="fetchData10()">Details</button>
+     </div>
+     <div class="grid grid-three">
+     <h1 class="text-blue">T-SHIRTS</h1>
+      <section class="box product">
+       <h2>tshirts 1</h2>
+       <img src="img/product/tshirts/1.jpg" />
+      
+<div class="product11">
+</div>
+      </section>
+<p align = "center"><button class="fetch-data-button" onclick="fetchData11()">Details</button></p>
+      <section class="box product">
+       <h2>tshirts 2</h2>
+       <img src="img/product/tshirts/2.jpg" />
+      
+<div class="product12">
+</div>
+      </section>
+ <p align = "center"><button class="fetch-data-button" onclick="fetchData12()">Details</button>
+      <section class="box product">
+       <h2>tshirts 3</h2>
+       <img src="img/product/tshirts/3.jpg" />
+      
+<div class="product13">
+</div>
+      </section>
+ <p align = "center"><button class="fetch-data-button" onclick="fetchData13()">Details</button>
+      <section class="box product">
+       <h2>tshirts 4</h2>
+       <img src="img/product/tshirts/4.jpg" />
+       
+<div class="product14">
+</div>
+      </section>
+<p align = "center"><button class="fetch-data-button" onclick="fetchData14()">Details</button>
+      <section class="box product">
+       <h2>tshirts 5</h2>
+       <img src="img/product/tshirts/5.jpg" />
+      
+<div class="product15">
+</div>
+      </section>
+<p align = "center"><button class="fetch-data-button" onclick="fetchData15()">Details</button>
+     </div>
+    </div>
+
+   </main>
+   <footer>
+    <div class="container">
+    <div class="full">
+     <div class="grid grid-three">
+     <h4 class="text-blue">PRODUCTS</h4>
+      <ul>
+       <li>T-shirts</li>
+       <li>Jeans</li>
+       <li>Shoes</li>
+      </ul>
+     </div>
+     <div class="grid grid-three">
+     <h4 class="text-blue">LINKS</h4>
+      <ul>
+       <li>T-shirts</li>
+       <li>Jeans</li>
+       <li>Shoes</li>
+      </ul>
+     </div>
+     <div class="grid grid-three">
+     <h4 class="text-blue">CONTACT</h4>
+      <ul>
+       <li>T-shirts</li>
+       <li>Jeans</li>
+       <li>Shoes</li>
+      </ul>
+     </div>
+    </div>
+    </div>
+     <div style="text-align: center; padding: 16px;">
+       &copy; Copyright - Divyansh 2023
+     </div>
+   </footer>
+   <script type="text/javascript">
+    (function(d) {
+     var products = document.getElementsByClassName('product');
+     for(var i = products.length - 1;i >= 0 ; --i) {
+      products[i].onclick = function() {
+       var src = this.getElementsByTagName('img')[0].src;
+       document.location.href = 'demo.html#' +  src;
+      }
+     }
+    })(document);
+
+   </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>

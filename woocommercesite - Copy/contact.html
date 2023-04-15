@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Men's World</title>
+    <link rel="shortcut icon" href="img/logo.ico" />
+    <meta charset="utf-8" />
+    <link href='https://fonts.googleapis.com/css?family=Advent+Pro:300,700' rel='stylesheet' type='text/css' />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+  <link rel="stylesheet" type="text/css" href="css/form.css" /> 
+   
+    
+  </head>
+  <body>
+   <header style="background-color: white; box-shadow: 0 1px 4px rgba(0, 0, 0, .1);">
+    <div class="container" style="padding-top: 8px;padding-bottom: 8px;">
+     <div class="grid grid-two">
+
+<a href="index.html"><img src="img/logo.jpg" alt="logo" style="height: 64px ;" />
+
+     </div>
+    
+    
+   </header>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Men's World</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   <main class="container">
+
+    <!-- <nav id="product-nav" class="full">
+     <li><a href="index.html">Home</a></li>
+     <li><a href="products.html">Products</a></li>
+     <li><a href="about.html">About</a></li>
+     <li><a href="contact.html">Contact</a></li>
+     <li style="float: right"><a href="login.html">Login</a></li>
+      <li style="float: right"><a href="register.html">Register</a></li>
+    </nav> -->
+
+    <div id="main">
+    <h1>Contact </h1>
+    <p>Don't be shy </p>
+    <div id="form_sample"></div>
+    <script src="js/form.js"></script>
+    </div>
+
+  </main>
+  <footer>
+   <div class="container">
+   <div class="full">
+    <div class="grid grid-three">
+    <h4 class="text-blue">PRODUCTS</h4>
+     <ul>
+      <li>T-shirts</li>
+      <li>Jeans</li>
+      <li>Shoes</li>
+     </ul>
+    </div>
+    <div class="grid grid-three">
+    <h4 class="text-blue">LINKS</h4>
+     <ul>
+      <li>T-shirts</li>
+      <li>Jeans</li>
+      <li>Shoes</li>
+     </ul>
+    </div>
+    <div class="grid grid-three">
+    <h4 class="text-blue">CONTACT</h4>
+     <ul>
+      <li>T-shirts</li>
+      <li>Jeans</li>
+      <li>Shoes</li>
+     </ul>
+    </div>
+   </div>
+   </div>
+    <div style="text-align: center; padding: 16px;">
+      &copy; Copyright - Divyansh 2023
+    </div>
+  </footer>
+  <script type="text/javascript">
+   (function(d) {
+    var products = document.getElementsByClassName('product');
+    for(var i = products.length - 1;i >= 0 ; --i) {
+     products[i].onclick = function() {
+      var src = this.getElementsByTagName('img')[0].src;
+      document.location.href = 'demo.html#' +  src;
+     }
+    }
+   })(document);
+
+  </script>
+ </body>
+ </html>
+
+
+ 
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  </body>
+</html>
